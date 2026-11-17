@@ -1,6 +1,11 @@
 # Formal Verification
 In this lab, we'll get an introduction to the concept of system modeling and formal verification.
 
+# Compiling `.dot` files
+The [Makefile](Makefile) defines rules for compiling `.dot` files into any of the output file extensions that the `dot` command accepts for Graphviz files. The following `make` commands are available from the project's root directory:
+- `make [file-extension]` compiles all `*.dot` files in the project's root directory into the file type given by `file-extension`. The file type can be omitted to use svg, the default file type.
+- `make clean` deletes all `*.dot.*` files in the project's root directory.
+
 # Learning objectives
 1. Model systems with finite state machines (FSM).
 1. Describe invariant properties of a system.
