@@ -1,15 +1,14 @@
 # Lab
 
 ## Invariants
-- Power always on
-- Barriers, sensors, and alarms function
-- Trains go correct way
-- One direction per track
-- Cars don't go under barriers
-- Train is going a reasonable speed limit. Time from approach sensor to barrier is less than 10 seconds.
-- Signals only detect train carts
-
-
+1. The power to all devices is always on and stable
+2. All barriers, sensors, and alarms are functional
+3. All trains go the correct way on its track
+4. Trains only go in one direction per track
+5. Cars and pedestrians never cross or block barriers
+6. Trains travel at or below the speed limit for the track
+7. All barriers are lowered when any train arrives at the crossing
+8. Signals only detect train cars
 
 ### Verifying Invariants
 
