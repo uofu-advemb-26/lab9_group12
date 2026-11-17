@@ -1,0 +1,38 @@
+digraph {
+	idle[label="idle"];
+	idle -> nb_approaching[label="nb_approach / start_alarm"];
+	idle -> sb_approaching[label="sb_approach / start_alarm"];
+
+	nb_approaching[label="nb_approaching"];
+	nb_approaching -> nb_present[label="elapsed / lower_barrier"];
+	nb_approaching -> both_approaching[label="sb_approach"];
+
+	sb_approaching[label="sb_approaching"];
+	sb_approaching -> sb_present[label="elapsed / lower_barrier"];
+	sb_approaching -> both_approaching[label="nb_approach"];
+
+	both_approaching[label="both approaching"];
+	both_approaching -> both_present[label="elapsed / lower_barrier"];
+
+	nb_present[label="nb_present"];
+	nb_present -> both_present[label="sb_approach"];
+	nb_present -> nb_departing[label="nb_depart / raise_barrier"];
+
+	sb_present[label="sb_present"];
+	sb_present -> both_present[label="nb_approach"];
+	sb_present -> sb_departing[label="sb_depart / raise_barrier"];
+
+	both_present[label="both_present"];
+	both_present -> sb_present[label="nb_depart"];
+	both_present -> nb_present[label="sb_depart"];
+
+	nb_departing[label="nb_departing"];
+	nb_departing -> nb_approaching[label="nb_approach"];
+	nb_departing -> sb_approaching[label="sb_approach"];
+	nb_departing -> idle[label="elapsed / stop_alarm"];
+
+	sb_departing[label="sb_departing"];
+	sb_departing -> nb_approaching[label="nb_approach"];
+	sb_departing -> sb_approaching[label="sb_approach"];
+	sb_departing -> idle[label="elapsed / stop_alarm"];
+}
