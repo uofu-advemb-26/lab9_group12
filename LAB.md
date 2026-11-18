@@ -11,7 +11,7 @@
 8. Signals only detect train cars
 
 ### Verifying Invariants
-
+If a northbound train approaches, the state eventually transitions to `ringing, arms_down` state and the second `ringing, arms_up` state. A southbound train approaching during either of these states won't trigger the alarm to stay on and the barrier to stay lowered. This violates invariant 7.
 
 ### Check your work
 
