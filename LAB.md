@@ -22,10 +22,10 @@ If a train goes the opposite way, it will trigger the depart sensor before the a
 
 | number | arms_down | alarm_on | northbound_present | southbound_present | north_approach | south_approach | north_depart | south_depart | elapsed | safety_hazard |
 |--------|-----------|----------|--------------------|--------------------|----------------|----------------|--------------|--------------|---------|---------------|
-| 0      | 0         | 0        | 0                  | 0                  | 6              | 5              | 16           | 16           | 18      |               |
-| 1      | 0         | 0        | 0                  | 1                  | 15             | 13             | 16           | 5            | 0       | 17            |
-| 2      | 0         | 0        | 1                  | 0                  | 14             | 15             | 4            | 16           | 0       | 17            |
-| 3      | 0         | 0        | 1                  | 1                  | 15             | 15             | 13           | 14           | 19      | 17            |
+| 0      | 0         | 0        | 0                  | 0                  | 6              | 5              | 16           | 16           | 0       |               |
+| 1      | 0         | 0        | 0                  | 1                  | 15             | 13             | 16           | 4            | 13      | 17            |
+| 2      | 0         | 0        | 1                  | 0                  | 14             | 15             | 4            | 16           | 14      | 17            |
+| 3      | 0         | 0        | 1                  | 1                  | 15             | 15             | 13           | 14           | 15      | 17            |
 | 4      | 0         | 1        | 0                  | 0                  | 6              | 5              | 4            | 4            | 0       |               |
 | 5      | 0         | 1        | 0                  | 1                  | 7              | 5              | 16           | 4            | 13      |               |
 | 6      | 0         | 1        | 1                  | 0                  | 6              | 7              | 4            | 16           | 14      |               |
@@ -43,9 +43,9 @@ If a train goes the opposite way, it will trigger the depart sensor before the a
 |--------|-----------|
 | 16     | All trains go the correct way on its track |
 | 17     | All barriers are lowered when any train arrives at the crossing |
-| 18     | <!-- FIXME: --> |
+| 18     | Timer must start after alarm begins or barrier raises |
 | 19     | <!-- FIXME: --> |
-| 20     | alarm not on when barrier low |
+| 20     | Alarm not on when barrier low |
 | 21     | The barrier is only lowered when a train is present |
 | 22     | At most one train is present on a track at a time |
 
