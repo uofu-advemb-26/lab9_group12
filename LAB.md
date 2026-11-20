@@ -9,9 +9,10 @@
 6. Trains travel at or below the speed limit for the track
 7. All barriers are lowered when any train arrives at the crossing
 8. Signals only detect train cars
-9. The alarm is always on while the barrier is down
-10. The barrier is only lowered when a train is present
-11. At most one train is present on a track at a time
+9. Timer must start after alarm begins or barrier raises
+10. The alarm is always on while the barrier is down
+11. The barrier is only lowered when a train is present
+12. At most one train is present on a track at a time
 
 ### Verifying Invariants
 If a northbound train approaches, the state eventually transitions to `ringing, arms_down` state and the second `ringing, arms_up` state. A southbound train approaching during either of these states won't trigger the alarm to stay on and the barrier to stay lowered. This violates invariant 7.
@@ -33,24 +34,23 @@ If a train goes the opposite way, it will trigger the depart sensor before the a
 | 5      | 0         | 1        | 0                  | 1                  | 7              | 5              | 16           | 4            | 13      |               |
 | 6      | 0         | 1        | 1                  | 0                  | 6              | 7              | 4            | 16           | 14      |               |
 | 7      | 0         | 1        | 1                  | 1                  | 7              | 7              | 5            | 6            | 15      |               |
-| 8      | 1         | 0        | 0                  | 0                  | 21             | 21             | 16           | 16           | 20      | 20            |
-| 9      | 1         | 0        | 0                  | 1                  | 15             | 13             | 16           | 4            | 13      | 20            |
-| 10     | 1         | 0        | 1                  | 0                  | 14             | 15             | 4            | 16           | 14      | 20            |
-| 11     | 1         | 0        | 1                  | 1                  | 15             | 15             | 13           | 14           | 15      | 20            |
-| 12     | 1         | 1        | 0                  | 0                  | 21             | 21             | 16           | 16           | 20      |               |
-| 13     | 1         | 1        | 0                  | 1                  | 15             | 22             | 16           | 4            | 20      |               |
-| 14     | 1         | 1        | 1                  | 0                  | 22             | 15             | 4            | 16           | 20      |               |
-| 15     | 1         | 1        | 1                  | 1                  | 22             | 22             | 13           | 14           | 20      |               |
+| 8      | 1         | 0        | 0                  | 0                  | 20             | 20             | 16           | 16           | 19      | 19            |
+| 9      | 1         | 0        | 0                  | 1                  | 15             | 13             | 16           | 4            | 13      | 19            |
+| 10     | 1         | 0        | 1                  | 0                  | 14             | 15             | 4            | 16           | 14      | 19            |
+| 11     | 1         | 0        | 1                  | 1                  | 15             | 15             | 13           | 14           | 15      | 19            |
+| 12     | 1         | 1        | 0                  | 0                  | 20             | 20             | 16           | 16           | 19      |               |
+| 13     | 1         | 1        | 0                  | 1                  | 15             | 21             | 16           | 4            | 19      |               |
+| 14     | 1         | 1        | 1                  | 0                  | 21             | 15             | 4            | 16           | 19      |               |
+| 15     | 1         | 1        | 1                  | 1                  | 21             | 21             | 13           | 14           | 19      |               |
 
 | number | invariant |
 |--------|-----------|
 | 16     | All trains go the correct way on its track |
 | 17     | All barriers are lowered when any train arrives at the crossing |
 | 18     | Timer must start after alarm begins or barrier raises |
-| 19     | <!-- FIXME: --> |
-| 20     | The alarm is always on while the barrier is down |
-| 21     | The barrier is only lowered when a train is present |
-| 22     | At most one train is present on a track at a time |
+| 19     | The alarm is always on while the barrier is down |
+| 20     | The barrier is only lowered when a train is present |
+| 21     | At most one train is present on a track at a time |
 
 
 ## Model checking
