@@ -27,30 +27,29 @@ If a train goes the opposite way, it will trigger the depart sensor before the a
 | number | arms_down | alarm_on | northbound_present | southbound_present | north_approach | south_approach | north_depart | south_depart | elapsed | safety_hazard |
 |--------|-----------|----------|--------------------|--------------------|----------------|----------------|--------------|--------------|---------|---------------|
 | 0      | 0         | 0        | 0                  | 0                  | 6              | 5              | 16           | 16           | 0       |               |
-| 1      | 0         | 0        | 0                  | 1                  | 15             | 21             | 16           | 4            | 13      | 17            |
-| 2      | 0         | 0        | 1                  | 0                  | 21             | 15             | 4            | 16           | 14      | 17            |
-| 3      | 0         | 0        | 1                  | 1                  | 21             | 21             | 13           | 14           | 15      | 17            |
+| 1      | 0         | 0        | 0                  | 1                  | 15             | 20             | 16           | 4            | 13      | 17            |
+| 2      | 0         | 0        | 1                  | 0                  | 20             | 15             | 4            | 16           | 14      | 17            |
+| 3      | 0         | 0        | 1                  | 1                  | 20             | 20             | 13           | 14           | 15      | 17            |
 | 4      | 0         | 1        | 0                  | 0                  | 6              | 5              | 4            | 4            | 0       |               |
 | 5      | 0         | 1        | 0                  | 1                  | 7              | 5              | 16           | 4            | 13      |               |
 | 6      | 0         | 1        | 1                  | 0                  | 6              | 7              | 4            | 16           | 14      |               |
 | 7      | 0         | 1        | 1                  | 1                  | 7              | 7              | 5            | 6            | 15      |               |
-| 8      | 1         | 0        | 0                  | 0                  | 20             | 20             | 16           | 16           | 19      | 19            |
-| 9      | 1         | 0        | 0                  | 1                  | 15             | 13             | 16           | 4            | 13      | 19            |
-| 10     | 1         | 0        | 1                  | 0                  | 14             | 15             | 4            | 16           | 14      | 19            |
-| 11     | 1         | 0        | 1                  | 1                  | 15             | 15             | 13           | 14           | 15      | 19            |
-| 12     | 1         | 1        | 0                  | 0                  | 20             | 20             | 16           | 16           | 19      |               |
-| 13     | 1         | 1        | 0                  | 1                  | 15             | 21             | 16           | 4            | 19      |               |
-| 14     | 1         | 1        | 1                  | 0                  | 21             | 15             | 4            | 16           | 19      |               |
-| 15     | 1         | 1        | 1                  | 1                  | 21             | 21             | 13           | 14           | 19      |               |
+| 8      | 1         | 0        | 0                  | 0                  | 19             | 19             | 16           | 16           | 18      | 18            |
+| 9      | 1         | 0        | 0                  | 1                  | 15             | 13             | 16           | 4            | 13      | 18            |
+| 10     | 1         | 0        | 1                  | 0                  | 14             | 15             | 4            | 16           | 14      | 18            |
+| 11     | 1         | 0        | 1                  | 1                  | 15             | 15             | 13           | 14           | 15      | 18            |
+| 12     | 1         | 1        | 0                  | 0                  | 19             | 19             | 16           | 16           | 18      |               |
+| 13     | 1         | 1        | 0                  | 1                  | 15             | 20             | 16           | 4            | 18      |               |
+| 14     | 1         | 1        | 1                  | 0                  | 20             | 15             | 4            | 16           | 18      |               |
+| 15     | 1         | 1        | 1                  | 1                  | 20             | 20             | 13           | 14           | 18      |               |
 
 | number | invariant |
 |--------|-----------|
 | 16     | All trains go the correct way on its track |
 | 17     | All barriers are lowered when any train arrives at the crossing |
-| 18     | Timer must start after alarm begins or barrier raises |
-| 19     | The alarm is always on while the barrier is down |
-| 20     | The barrier is only lowered when a train is present |
-| 21     | At most one train is present on a track at a time |
+| 18     | The alarm is always on while the barrier is down |
+| 19     | The barrier is only lowered when a train is present |
+| 20     | At most one train is present on a track at a time |
 
 
 ## Model checking
