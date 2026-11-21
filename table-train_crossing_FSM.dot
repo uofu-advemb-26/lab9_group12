@@ -1,0 +1,907 @@
+digraph {
+	graph [
+		concentrate=true,
+		mclimit=100,
+		nodesep=1,
+		ranksep=6
+	];
+
+	// Nodes
+	s0  [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=0,
+		group="0"
+	];
+
+	s4  [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=4,
+		group="0"
+	];
+
+	s5  [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=5,
+		group="2"
+	];
+
+	s16 [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=16,
+		group="5"
+	];
+
+	s6  [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=6,
+		group="2"
+	];
+
+	s14 [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=14,
+		group="4"
+	];
+
+	s7  [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=7,
+		group="2"
+	];
+
+	s13 [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=13,
+		group="4"
+	];
+
+	s1  [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=1,
+		group="1"
+	];
+
+	s15 [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=15,
+		group="4"
+	];
+
+	s20 [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=20,
+		group="5"
+	];
+
+	s18 [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=18,
+		group="5"
+	];
+
+	s2  [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=2,
+		group="1"
+	];
+
+	s3  [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=3,
+		group="1"
+	];
+
+	s8  [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=8,
+		group="5"
+	];
+
+	s19 [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=19,
+		group="5"
+	];
+
+	s9  [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=9,
+		group="3"
+	];
+
+	s10 [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=10,
+		group="3"
+	];
+
+	s11 [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=11,
+		group="3"
+	];
+
+	s12 [
+		penwidth=6,
+		width=3,
+		height=3,
+		fontsize=100,
+		label=12,
+		group="5"
+	];
+
+	// Edges
+	s7:s -> s15:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s8:s -> s19:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s8:s -> s19:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s8:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s8:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s8:s -> s18:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s9:s -> s15:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s9:s -> s13:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s9:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s9:s -> s4:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s9:s -> s13:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s10:s -> s14:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s10:s -> s15:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s10:s -> s4:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s10:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s10:s -> s14:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s11:s -> s15:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s11:s -> s15:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s11:s -> s13:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s11:s -> s14:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s11:s -> s15:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s12:s -> s19:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s12:s -> s19:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s12:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s12:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s12:s -> s18:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s13:ne -> s15:se	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s13:s -> s20:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s13:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s13:ne -> s4:se	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s13:s -> s18:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s14:s -> s20:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s14:ne -> s15:se	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s14:ne -> s4:se	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s14:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s14:s -> s18:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s15:s -> s20:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s15:s -> s20:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s15:s -> s13:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s15:s -> s14:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s15:s -> s18:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s0:s -> s6:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s0:s -> s5:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s0:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s0:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s0:w -> s0:w	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s1:s -> s15:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s1:s -> s20:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s1:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s1:s -> s4:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s1:s -> s13:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s2:s -> s20:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s2:s -> s15:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s2:s -> s4:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s2:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s2:s -> s14:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s3:s -> s20:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s3:s -> s20:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s3:s -> s13:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s3:s -> s14:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s3:s -> s15:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s4:s -> s6:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s4:ne -> s5:se	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s4:w -> s4:w	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart | s_depart",
+			edgetooltip="n_depart | s_depart"
+		];
+
+	s4:ne -> s0:e	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s5:s -> s7:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s5:w -> s5:w	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s5:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s5:s -> s4:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s5:s -> s13:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s6:w -> s6:w	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach",
+			edgetooltip="n_approach"
+		];
+
+	s6:s -> s7:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_approach",
+			edgetooltip="s_approach"
+		];
+
+	s6:ne -> s4:se	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s6:s -> s16:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+	s6:s -> s14:n	[
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="elapsed",
+			edgetooltip="elapsed"
+		];
+
+	s7:w -> s7:w	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_approach | s_approach",
+			edgetooltip="n_approach | s_approach"
+		];
+
+	s7:ne -> s5:se	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="n_depart",
+			edgetooltip="n_depart"
+		];
+
+	s7:ne -> s6:se	[
+			weight=0,
+			arrowsize=3,
+			penwidth=3,
+			fontsize=50,
+			color=darkcyan,
+			xlabel="s_depart",
+			edgetooltip="s_depart"
+		];
+
+}
