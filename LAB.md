@@ -59,5 +59,18 @@ The only transition from the `present` state is if `nb_depart` and `sb_approach`
 
 ## Model checking
 
+#### Josh's FSM
+States `1-3`, `8-12`, `16`, and `18-20` represent states that are impossible in a normally-functioning system or states that are the result of an invariant occurring. Josh's FSM doesn't take these states into account and assumes the system will always function with valid invariants. The other states in the table map to the following states in Josh's FSM:
+- `0  = idle`
+- `4  = nb_departing/sb_departing`
+- `5  = sb_approaching`
+- `6  = nb_approaching`
+- `7  = both_approaching`
+- `13 = sb_present`
+- `14 = nb_present`
+- `15 = both_present`
+
+Josh's FSM doesn't show transistions that are implied loops or would transition to an invariant state. It also has two 'departing' states, `nb_departing` and `sb_departing`, instead of the single one, state `4`, from the table. This doesn't appear to affect the behavior of the FSM, but they could be combined into a single state to simplify the FSM.
+
 #### Nick's FSM
-It has the bare minimum of northbound train or southbound train triggering the alarm and lowering the barrier, and the barrier raising and alarm turning off when after the train leaves. However, it has far less states because it doesn't have transistions for when both trains are present. On 'present' state, it waits for both sides to have their trains depart, whereas the table FSM can change to a state where northbound or southbound train is alone, then from there no trains left. Furthermore, it lacks accouting for invariants and doesn't have failsafes for when they happen.
+It has the bare minimum of northbound train or southbound train triggering the alarm and lowering the barrier, and the barrier raising and alarm turning off when after the train leaves. However, it has far less states because it doesn't have transistions for when both trains are present. On `present` state, it waits for both sides to have their trains depart, whereas the table FSM can change to a state where northbound or southbound train is alone, then from there no trains left. Furthermore, it lacks accouting for invariants and doesn't have failsafes for when they happen.
