@@ -21,6 +21,8 @@ If a train goes the opposite way, it will trigger the depart sensor before the a
 
 ### Check your work
 
+Counter example Josh's model.
+1. When a train triggers nb_depart or sb_depart first, the program won't leave the idle state, and thus the barriers are never lowered. Then the train triggers nb_approach or sb_approach afterwards, despite them requiring them to activate first. This violates invariant 3.
 
 ## Prove it.
 
