@@ -1,0 +1,14 @@
+digraph {
+    idle[label="idle"];
+    idle -> approaching[label="nb_approach or sb_approach / start_alarm"];
+
+    approaching[label="approaching"];
+    approaching -> present[label="elapsed / lower_barrier"];
+
+    present[label="present"]
+    present -> departing[label="nb_depart and sb_approach / raise_barrier"]
+
+    departing[label="departing"]
+    departing -> present[label="nb_approach or sb_approach / lower_barrier"]
+    departing -> idle[label="elapsed / stop_alarm"]
+}
