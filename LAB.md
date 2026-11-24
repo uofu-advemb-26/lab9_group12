@@ -58,3 +58,6 @@ The only transition from the `present` state is if `nb_depart` and `sb_approach`
 
 
 ## Model checking
+
+#### Nick's FSM
+It has the bare minimum of northbound train or southbound train triggering the alarm and lowering the barrier, and the barrier raising and alarm turning off when after the train leaves. However, it has far less states because it doesn't have transistions for when both trains are present. On 'present' state, it waits for both sides to have their trains depart, whereas the table FSM can change to a state where northbound or southbound train is alone, then from there no trains left. Furthermore, it lacks accouting for invariants and doesn't have failsafes for when they happen.
